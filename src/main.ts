@@ -84,7 +84,7 @@ Promise.all(assetBundles)
       LOSE_BEEPS: new Sound(audios.get(LoseBeepsSound)?.src, 0, 3, 30),
       REEL_SPIN: new Sound(audios.get(ReelSpinSound)?.src, 0, 0, 30),
       WIN_ALERT: new Sound(audios.get(WinAlertSound)?.src, 0, 3, 30),
-      BACKGROUND_MUSIC: new Music(audios.get(BackgroundMusic)?.src, 0, 0, 5),
+      BACKGROUND_MUSIC: new Music(audios.get(BackgroundMusic)?.src, 0, 0, 20),
     };
     document.body.style.backgroundImage = `url(${Background})`;
     game.setup();
