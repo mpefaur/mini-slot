@@ -30,7 +30,7 @@ const MyCredits: Component = () => {
   return (
     <>
       <div class="counter user-credits">
-        <div class="label">Credits</div>
+        <div class="label">Nofys</div>
         <div ref={dom.current}></div>
       </div>
     </>
