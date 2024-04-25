@@ -18,9 +18,9 @@ export class Reels implements iSubscribe, iUnsubscribe, iInit {
     this.section = gui.addFolder('Reels');
     this.animations = new Animations(this.section);
     this.reels = [
-      new Reel({ spinTime: '1.0 sec', id: 0 }, this.section, this.animations),
-      new Reel({ spinTime: '1.4 sec', id: 1 }, this.section, this.animations),
-      new Reel({ spinTime: '1.8 sec', id: 2 }, this.section, this.animations),
+      new Reel({ spinTime: '1.5 sec', id: 0 }, this.section, this.animations),
+      new Reel({ spinTime: '1.9 sec', id: 1 }, this.section, this.animations),
+      new Reel({ spinTime: '2.3 sec', id: 2 }, this.section, this.animations),
     ];
     this.update = this.update.bind(this);
   }
