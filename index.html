@@ -1,6 +1,66 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+      .hero {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(https://nof.town/images/hero/NofCaballero.gif),
+          url(https://nof.town/images/hero/front1.png), url(https://nof.town/images/hero/Country0.png),
+          url(https://nof.town/images/hero/background0.png);
+        background-color: #000;
+        background-repeat: no-repeat, repeat-x, repeat-x, repeat-x;
+        background-position:
+          left 30% bottom 40px,
+          left 0 bottom 0,
+          left 0 bottom 40px,
+          left 0 bottom 0;
+        -webkit-animation: back 120s linear infinite;
+        animation: back 120s linear infinite;
+        padding: 0;
+      }
+      .nofy {
+        width: 210px;
+        height: 380px;
+        position: absolute;
+        bottom: 35%;
+        left: 6%;
+        background-image: url(https://nof.town/images/hero/logo-nof.gif);
+      }
+      @media screen and (max-width: 1200px) {
+        .nofy {
+          display: none;
+        }
+      }
+      @keyframes back {
+        0% {
+          background-position:
+            left 30% bottom 40px,
+            left 0 bottom 0,
+            left 0 bottom 40px,
+            left 0 bottom 0;
+        }
+
+        50% {
+          background-position:
+            left 50% bottom 40px,
+            left -2616px bottom 0,
+            left -508px bottom 40px,
+            left -256px bottom 0;
+        }
+
+        to {
+          background-position:
+            left 30% bottom 40px,
+            left -5232px bottom 0,
+            left -1016px bottom 40px,
+            left -512px bottom 0;
+        }
+      }
+    </style>
     <base href="%VITE_BASE_URL%" />
 
     <meta charset="UTF-8" />
@@ -32,6 +92,9 @@
     <title>%VITE_TITLE%</title>
   </head>
   <body>
+    <div class="hero">
+      <div class="nofy"></div>
+    </div>
     <div id="menu"></div>
     <div id="app">
       <div id="screen"></div>

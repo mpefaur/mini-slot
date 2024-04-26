@@ -87,6 +87,7 @@ Promise.all(assetBundles)
       BACKGROUND_MUSIC: new Music(audios.get(BackgroundMusic)?.src, 0, 0, 20),
     };
     document.body.style.backgroundImage = `url(${Background})`;
+    //document.body.style.backgroundImage = `url(${Background})`;
     game.setup();
   })
   .then(() => {
